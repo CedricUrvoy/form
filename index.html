@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form SCSS</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form class="form-container" action="#" method="post">
+        <fieldset>
+            <legend class="form-legend">Form :</legend>
+            <div class="form-error-message">
+                <p>Error Message</p>
+            </div>
+
+            <div>
+                <label class="form-label" for="name">Text Input:</label>
+                <input class="form-input-text" type="text" name="name" id="name" value="" tabindex="1" />
+            </div>
+
+            <div>
+                <ul class="form-list">
+                    <li>
+                        <label class="form-label" for="radio-choice-1">Choice 1</label>
+                        <input class="form-input-radio" type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1" />
+                    </li>
+
+                    <li>
+                        <label class="form-label" for="radio-choice-2">Choice 2</label>
+                        <input class="form-input-radio" type="radio" name="radio-choice-2" id="radio-choice-2" tabindex="3" value="choice-2" />
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <label class="form-label" for="select-choice">Select Dropdown Choice:</label>
+                <select  class="form-select" name="select-choice" id="select-choice">
+                    <option class="form-select-option" value="Choice 1">Choice 1</option>
+                    <option class="form-select-option" value="Choice 2">Choice 2</option>
+                    <option class="form-select-option" value="Choice 3">Choice 3</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="form-label" for="textarea">Textarea:</label>
+                <textarea class="form-input-textarea" cols="40" rows="8" name="textarea" id="textarea"></textarea>
+            </div>
+            <ul class="form-list">
+                <li>
+                    <div>
+                        <label class="form-label" for="checkbox">Checkbox:</label>
+                        <input class="form-input-checkbox" type="checkbox" name="checkbox" id="checkbox" />
+                    </div>
+                    <div>
+                        <label class="form-label" for="checkbox">Checkbox:</label>
+                        <input class="form-input-checkbox" type="checkbox" name="checkbox" id="checkbox" />
+                    </div>
+                </li>
+            </ul>
+
+            <div>
+                <input class="form-submit" type="submit" value="Submit" />
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
