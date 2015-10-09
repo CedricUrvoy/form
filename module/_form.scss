@@ -1,5 +1,73 @@
-/** Input Reset */
+/* Variables for form */
 
-input{
+$maincolor:#3498db;
+$successcolor:#2ecc71;
+$errorcolor:#e74c3c;
+$backgroundcolor:#7f8c8d;
+$btncolor:#7f8c8d;
+
+%form-variables{
+    font-size: 1.5em;
+
+
+}
+
+.form-container{
+    @extend %clearfix;
+
+    position:relative;
+    display:block;
+    width: 100%;
+
+    padding: 0.8em;
+    border: none;
+    border-radius: 0;
+    background: #f0f0f0;
+
+    color: #aaa;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+
+.form-legend{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+
+
+.form-label {
+    @extend %form-variables;
+
+
+    &:before{
+
+    }
+}
+
+
+
+.form-label-content{
+
+}
+
+%form-input{
+    @extend %form-variables;
+    padding: 10px;
+
+}
+
+.form-input-text{
+    @extend %form-input;
+}
+
+.form-error-message{
+    @extend %visuallyhidden;
+}
+
+.form-submit{
+    @extend .btn;
+
 
 }
